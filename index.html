@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Al-Burhan School Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e7f7e7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    .container {
+      padding: 20px;
+    }
+    .section {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #2e7d32;
+    }
+    .accordion {
+      margin-top: 10px;
+    }
+    .accordion-item {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .accordion-header {
+      background-color: #c8e6c9;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .accordion-content {
+      display: none;
+      padding: 10px;
+      background-color: #f1f8e9;
+    }
+    a {
+      color: #1b5e20;
+      text-decoration: none;
+      display: block;
+      margin: 8px 0;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Al-Burhan School Portal</h1>
+    <p>Wamakko, Sokoto | Primary & JSS | Est. 2023</p>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>About Us</h2>
+      <p>Al-Burhan School, located in Wamakko, Sokoto, offers quality and affordable education for both boys and girls with a population between 300–700. Founded in 2023, the school runs Nursery, Primary, Junior Secondary, and Islamiyya arms. It is directed by Abdulmumin and Farouk.</p>
+    </div>
+
+    <div class="section">
+      <h2>Curriculum & Lesson Plans</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">Basic 1</div>
+          <div class="accordion-content">
+            <a href="https://drive.google.com/file/d/BASIC1_CURRICULUM_LINK/view?usp=sharing" target="_blank">Curriculum PDF</a>
+            <a href="https://drive.google.com/file/d/BASIC1_LESSONPLAN_LINK/view?usp=sharing" target="_blank">Lesson Plan PDF</a>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Basic 2</div>
+          <div class="accordion-content">
+            <a href="https://drive.google.com/file/d/BASIC2_CURRICULUM_LINK/view?usp=sharing" target="_blank">Curriculum PDF</a>
+            <a href="https://drive.google.com/file/d/BASIC2_LESSONPLAN_LINK/view?usp=sharing" target="_blank">Lesson Plan PDF</a>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">JSS 3</div>
+          <div class="accordion-content">
+            <a href="https://drive.google.com/file/d/JSS3_CURRICULUM_LINK/view?usp=sharing" target="_blank">Curriculum PDF</a>
+            <a href="https://drive.google.com/file/d/JSS3_LESSONPLAN_LINK/view?usp=sharing" target="_blank">Lesson Plan PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Academic Documents</h2>
+      <a href="https://drive.google.com/file/d/CALENDAR_LINK/view?usp=sharing" target="_blank">Academic Calendar</a>
+      <a href="https://drive.google.com/file/d/TIMETABLE_LINK/view?usp=sharing" target="_blank">Timetable</a>
+      <a href="https://drive.google.com/file/d/SCHOOL_FEES_LINK/view?usp=sharing" target="_blank">School Fees Info</a>
+      <a href="https://drive.google.com/file/d/RESULT_LINK/view?usp=sharing" target="_blank">Student Results</a>
+      <a href="https://drive.google.com/file/d/ANNOUNCEMENT_LINK/view?usp=sharing" target="_blank">Announcements</a>
+    </div>
+
+    <div class="section">
+      <h2>Records</h2>
+      <a href="https://drive.google.com/file/d/STUDENT_RECORD_LINK/view?usp=sharing" target="_blank">Student Record</a>
+      <a href="https://drive.google.com/file/d/TEACHER_RECORD_LINK/view?usp=sharing" target="_blank">Teacher Record</a>
+    </div>
+
+    <div class="section">
+      <h2>National & School Anthem</h2>
+      <p><strong>National Anthem:</strong><br/>Arise, O compatriots... (Full lyrics here)</p>
+      <p><strong>School Anthem:</strong><br/>We are the future... (Full lyrics here)</p>
+    </div>
+
+    <div class="section">
+      <h2>Islamiyya Section</h2>
+      <a href="https://drive.google.com/file/d/ISLAMIYYA_SYLLABUS_LINK/view?usp=sharing" target="_blank">Islamiyya Syllabus</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Al-Burhan School. All rights reserved.
+  </footer>
+
+  <script>
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
